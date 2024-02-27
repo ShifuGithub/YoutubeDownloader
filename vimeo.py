@@ -6,7 +6,8 @@ import os
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Single Vimeo video URL for testing
-video_url = 'https://player.vimeo.com/video/898892582'
+video_url = 'https://player.vimeo.com/video/897001352'
+video_title = 'LeanAgencyModel'
 video_id = video_url.split('/')[-1]
 
 def download_and_convert_video(video_url, video_id):
@@ -15,7 +16,7 @@ def download_and_convert_video(video_url, video_id):
     # Define filenames for video and audio based on video ID
     video_filename = f"{video_id}_video.mp4"
     audio_filename = f"{video_id}_audio.m4a"
-    output_filename = f"{video_id}_output.mp4"
+    output_filename = f"video_title.mp4"
 
     try:
         # Download the best video and audio separately
